@@ -10,10 +10,6 @@
 
 
 /* ---- Base Rules ---- */
-/* html{
-    scroll-behavior: smooth;
-} */
-
 body {
     background: rgb(136,203,171);
     background: linear-gradient(0deg, rgba(136,203,171,1) 0%, rgba(0,13,60,1) 100%);
@@ -50,11 +46,6 @@ p {
     color: #eee;
 }
 
-a{
-    text-decoration: none;
-    color: #000;
-}
-
 /* ---- Layout Rules ---- */
 main {
     margin: 10vh 1em 10vh;
@@ -74,10 +65,6 @@ section {
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
-/* .navbar__menu{
-    height: 60px;
-} */
-
 .navbar__menu ul {
     display: flex;
     justify-content: flex-end;
@@ -110,9 +97,17 @@ section {
     transition: ease 0.3s all;
 }
 
+.navbar__menu .menu__link > a{
+    color: #000000;
+    text-decoration: none;
+}
+
 .navbar__menu .menu__active {
     background-color: rgb(4, 57, 164);
-    color: #fff;
+}
+
+.navbar__menu .menu__active > a{
+    color: #eee;
 }
 
 
